@@ -45,3 +45,7 @@ body {
     height: 10em;
     background-color: red;
 }
+
+.shadow-box {
+    box-shadow: -10px 10px 5px black;
+}
