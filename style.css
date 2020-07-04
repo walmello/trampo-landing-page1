@@ -18,10 +18,30 @@ body {
 }
 
 .fiery-gradient {
-    background: rgb(255,0,0);
-    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,158,0,1) 100%);
+    background: #f85032;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.black-transparent-background {
+    background-color: #0007;
+}
+
+.darker-transparent-background {
+    background-color: #000a;
 }
 
 .soft-shadow {
     text-shadow: 2px 2px 7px black;
+}
+
+.red-banner {
+    background-color: red;
+    border: 5px solid #f55;
+}
+
+.small-box {
+    width: 10em;
+    height: 10em;
+    background-color: red;
 }
