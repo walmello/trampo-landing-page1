@@ -1,8 +1,27 @@
 body {
-    background-color: #222;
+    background: url('imagens/shopping-4000414_1920.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: #000f;
     color: White;
 }
 
-.button {
-    font-size: 2em;
+.black-background {
+    background-color: #000f;
+    position: fixed;
+    height: 100vh;
+    z-index: 20;
+}
+
+.shadow-text {
+    text-shadow: 5px 3px 1px black
+}
+
+.fiery-gradient {
+    background: rgb(255,0,0);
+    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,158,0,1) 100%);
+}
+
+.soft-shadow {
+    text-shadow: 2px 2px 7px black;
 }
