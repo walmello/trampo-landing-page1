@@ -1,51 +1,183 @@
+html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 body {
-    background: url('imagens/shopping-4000414_1920.jpg');
-    background-size: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    word-break: break-word;
+    background: url('./images/shopping-4000414_1920.jpg');
     background-attachment: fixed;
-    background-color: #000f;
-    color: White;
+    background-size: 100vh;
+    padding: 5vh 0;
 }
 
-.black-background {
-    background-color: #000f;
-    position: fixed;
-    height: 100vh;
-    z-index: 20;
+.dark {
+    background-color: #111;
+    color: white;
 }
 
-.shadow-text {
-    text-shadow: 5px 3px 1px black
+.transparent {
+    background-color: transparent;
+    color: white;
 }
 
-.fiery-gradient {
-    background: #f85032;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+header h1{
+    color: #ec2300;
+    font-weight: bolder;
 }
 
-.black-transparent-background {
-    background-color: #0007;
+.container {
+    padding: 0 1em;
 }
 
-.darker-transparent-background {
-    background-color: #000a;
+.flat-container {
+    padding: 1em;
 }
 
-.soft-shadow {
-    text-shadow: 2px 2px 7px black;
+img, iframe {
+    max-width: 100%;
 }
 
-.red-banner {
-    background-color: red;
-    border: 5px solid #f55;
+iframe {
+    max-height: 100vw;
+    width: 100%;
 }
 
-.small-box {
-    width: 10em;
-    height: 10em;
-    background-color: red;
+.hero p {
+    font-size: 1.3em;
 }
 
-.shadow-box {
-    box-shadow: -10px 10px 5px black;
+small {
+    font-size: 0.7em;
+}
+
+button {
+    border-radius: 0.3em;
+    border: none;
+    padding: 0.3em 0.7em;
+    font-size: 1.5em;
+}
+
+button b {
+    font-size: 1.7em;
+    font-weight: bolder;
+}
+
+button.green {
+    background-color: rgb(0, 190, 0);
+    color: white;
+    box-shadow: 3px 2px 0 rgb(0, 160, 0);
+}
+
+button.red{
+    background-color: rgb(236, 16, 0);
+    color: white;
+    box-shadow: 3px 2px 0 rgb(112, 6, 6);
+}
+
+button.red:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+button.blue {
+    background-color: rgb(96, 109, 226);
+    color: white;
+    box-shadow: 3px 2px 0 rgb(7, 0, 112);
+}
+
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+.red {
+    color: red;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 2em;
+}
+
+ul {
+    text-align: left;
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 2em;
+    font-size: 1.2em;
+}
+
+.galeria {
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.galeria img{
+    padding: 0;
+    width: 100%;
+}
+
+section p {
+    font-size: 1.3em;
+}
+
+@media(min-width: 480px){
+    .flex{
+        display: flex;
+    }
+
+    .flex.innermargin > * {
+        margin: 2em;
+    }
+
+    .container.small {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    body {
+        background-size: 100vw;
+        padding: 5vh 0;
+    }    
+    .half {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+}
+
+.container.small {
+    padding: 0;
+}
+
+section {
+    padding: 10vh 10%;
+}
+
+.big{
+    font-size: 3em;
 }
