@@ -1,41 +1,17 @@
 html {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-}
-
-body {
-    margin: 0;
-    font-family: sans-serif;
     text-align: center;
-    word-break: break-word;
+    font-family: Arial, Helvetica, sans-serif;
     background: url('./images/shopping-4000414_1920.jpg');
     background-attachment: fixed;
-    background-size: 100vh;
-    padding: 5vh 0;
-}
-
-.dark {
-    background-color: #111;
     color: white;
 }
 
-.transparent {
-    background-color: transparent;
-    color: white;
+h1{
+    color: rgb(250, 0, 0);
 }
 
-header h1{
-    color: #ec2300;
-    font-weight: bolder;
-}
-
-.container {
-    padding: 0 1em;
-}
-
-.flat-container {
-    padding: 1em;
+header p {
+    font-size: 1.3em;
 }
 
 img, iframe {
@@ -43,141 +19,83 @@ img, iframe {
 }
 
 iframe {
-    max-height: 100vw;
+    height: 50vw;
     width: 100%;
 }
 
-.hero p {
-    font-size: 1.3em;
+img {
+    width: 100%;
 }
 
-small {
-    font-size: 0.7em;
+section {
+    margin: 10%;
+}
+
+section * {
+    margin: 2%;
+}
+
+header {
+    margin: 1rem;
+}
+
+.box {
+    background-color: black;
+    margin: 0;
+    padding: 10%;
 }
 
 button {
-    border-radius: 0.3em;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    background-color: rgb(70, 192, 0);
     border: none;
-    padding: 0.3em 0.7em;
-    font-size: 1.5em;
-}
-
-button b {
-    font-size: 1.7em;
-    font-weight: bolder;
-}
-
-button.green {
-    background-color: rgb(0, 190, 0);
     color: white;
-    box-shadow: 3px 2px 0 rgb(0, 160, 0);
+    border-radius: 10px;
 }
 
-button.red{
-    background-color: rgb(236, 16, 0);
-    color: white;
-    box-shadow: 3px 2px 0 rgb(112, 6, 6);
+ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
 }
 
-button.red:hover{
-    background-color: tomato;
-    cursor: pointer;
+ul li::before {
+    content: '►  ';
+    color: red;
 }
 
-button.blue {
-    background-color: rgb(96, 109, 226);
-    color: white;
-    box-shadow: 3px 2px 0 rgb(7, 0, 112);
+.price-before {
+    font-size: 3rem;
 }
 
-
-h2 {
-    font-size: 2em;
+.price-after {
+    font-size: 3rem;
 }
 
-h3 {
-    font-size: 1.5em;
-}
-
-h4 {
-    font-size: 1em;
+.green {
+    color: rgb(0, 235, 0);
 }
 
 .red {
     color: red;
 }
 
-footer {
-    background-color: rgb(0, 0, 0);
-    padding: 2em;
+.garantia {
+    width: 30vw;
 }
 
-ul {
-    text-align: left;
-    list-style: none;
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 2em;
-    font-size: 1.2em;
-}
-
-.galeria {
-    padding: 0;
-    margin: auto;
-    box-sizing: border-box;
-}
-
-.galeria img{
-    padding: 0;
-    width: 100%;
-}
-
-section p {
-    font-size: 1.3em;
-}
-
-@media(min-width: 480px){
-    .flex{
+@media(min-width: 700px){
+    .flex {
         display: flex;
+        align-items: center;
     }
 
-    .flex.innermargin > * {
-        margin: 2em;
+    iframe {
+        height: 40vh;
     }
 
-    .container.small {
-        max-width: 600px;
-        margin: auto;
+    .box {
+        padding: 2%;
     }
-
-    body {
-        background-size: 100vw;
-        padding: 5vh 0;
-    }    
-    .half {
-        width: 100vw;
-    }
-
-    h1 {
-        font-size: 3em;
-    }
-
-    h3 {
-        font-size: 2.5em;
-    }
-}
-
-.container.small {
-    padding: 0;
-}
-
-section {
-    padding: 10vh 10%;
-}
-
-.big{
-    font-size: 3em;
 }
