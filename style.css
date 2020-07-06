@@ -11,10 +11,14 @@ h1{
 }
 
 header p {
+    margin: 3rem 1rem;
+}
+
+header p {
     font-size: 1.3em;
 }
 
-img, iframe {
+img, iframe, video {
     max-width: 100%;
 }
 
@@ -52,6 +56,7 @@ button {
     border: none;
     color: white;
     border-radius: 10px;
+    max-width: 200px;
 }
 
 ul {
@@ -97,5 +102,9 @@ ul li::before {
 
     .box {
         padding: 2%;
+    }
+
+    header {
+        margin: 0 20%;
     }
 }
