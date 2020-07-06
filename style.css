@@ -104,10 +104,15 @@ ul li::before {
     width: 30vw;
 }
 
+
 @media(min-width: 700px){
     .flex {
         display: flex;
         align-items: center;
+    }
+
+    .flex > * {
+        width: 100%;
     }
 
     .box {
@@ -140,4 +145,9 @@ ul li::before {
         max-width: 100%;
         max-height: 300px;
     }
+
+    .stretch{
+        margin: 3em;
+    }
+    
 }
